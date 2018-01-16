@@ -27,6 +27,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
         $schedule->command('laibin:active-user')->hourly();
+        $schedule->command('laibin:active-at')->dailyAt('00:00');
     }
 
     /**
